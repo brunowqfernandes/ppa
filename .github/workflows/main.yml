@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.estudio86.com.br
-        username: ftp_ppa
+        username: ftp_ppa@estudio86.com.br
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/clientes23/ppa/
