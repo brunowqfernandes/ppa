@@ -1,0 +1,116 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Estudio 86\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-27 14:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.6; wp-5.5.3"
+
+#: page-sobre.php:37
+msgid "Acesse meu Currículo Lattes"
+msgstr ""
+
+#: single-servico.php:42 page-sobre.php:51
+msgid "Agendar avaliação"
+msgstr ""
+
+#: page-aluguel.php:24
+msgid "Aluguel de <strong>Equipamentos</strong>"
+msgstr ""
+
+#: page-home.php:79 index.php:79
+msgid "Aluguel de equipamentos"
+msgstr ""
+
+#: archive.php:7 page-blog.php:7
+msgid "Blog"
+msgstr ""
+
+#. Author of the theme
+msgid "Bruno Fernandes"
+msgstr ""
+
+#: page-home.php:114 index.php:114
+msgid "Cadastre-se"
+msgstr ""
+
+#: archive.php:56 single.php:24 page-area-aluno.php:239 page-blog.php:56
+msgid "Categorias"
+msgstr ""
+
+#: single-servico.php:41
+msgid "Conheça nossos serviços"
+msgstr ""
+
+#: page-area-aluno.php:86
+msgid ""
+"Criamos esta sessão no site para que os alunos dos cursos ministrados pela "
+"Adriana Pastore possam baixar diversos conteúdos apresentados nas aulas."
+msgstr ""
+
+#: single-servico.php:48 page-sobre.php:57
+msgid "Deixe seu <strong>telefone</strong>"
+msgstr ""
+
+#: single-servico.php:49 page-sobre.php:58
+msgid ""
+"Descubra como os serviços da <strong>Pastore Físio</strong> podem te ajudar!"
+msgstr ""
+
+#: archive.php:24 page-blog.php:24
+msgid "Destaques do <strong>blog</strong>"
+msgstr ""
+
+#: page-home.php:50 index.php:50
+msgid "Disponibilizamos aqui um material completo sobre a fisioterapia."
+msgstr ""
+
+#: footer.php:11
+msgid "Endereços"
+msgstr ""
+
+#. Name of the theme
+msgid "Estudio 86"
+msgstr ""
+
+#: page-sobre.php:43
+msgid "Fisioterapia Traumato-ortopédica"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://estudio86.com.br/"
+msgstr ""
+
+#: page-home.php:115 index.php:115
+msgid "Preencha os campos com seus dados e receba nossas novidades por e-mail!"
+msgstr ""
+
+#: page-sobre.php:31
+msgid "Quem é Adriana Pastore?"
+msgstr ""
+
+#: page-home.php:89 index.php:89
+msgid "Serviços"
+msgstr ""
+
+#. Description of the theme
+msgid "Tema criado para o Site Estudio 86"
+msgstr ""
+
+#: page-sobre.php:50
+msgid "Ver galeria de fotos"
+msgstr ""
+
+#: page-home.php:49 index.php:49
+msgid "Área <strong>do aluno</strong>"
+msgstr ""

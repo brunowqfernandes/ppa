@@ -1,0 +1,12 @@
+.featherlight{	
+	.featherlight-content{
+		background: transparent;
+		.featherlight-close-icon{
+			color: #fff;
+		}
+	}
+	&:last-of-type{
+		background: rgba(#752686, .9)
+	}
+
+}

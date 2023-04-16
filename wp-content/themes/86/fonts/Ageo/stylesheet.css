@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-ExtraBold.eot');
+    src: url('Ageo-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-ExtraBold.woff2') format('woff2'),
+        url('Ageo-ExtraBold.woff') format('woff'),
+        url('Ageo-ExtraBold.ttf') format('truetype'),
+        url('Ageo-ExtraBold.svg#Ageo-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-Bold.eot');
+    src: url('Ageo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-Bold.woff2') format('woff2'),
+        url('Ageo-Bold.woff') format('woff'),
+        url('Ageo-Bold.ttf') format('truetype'),
+        url('Ageo-Bold.svg#Ageo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-Heavy.eot');
+    src: url('Ageo-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-Heavy.woff2') format('woff2'),
+        url('Ageo-Heavy.woff') format('woff'),
+        url('Ageo-Heavy.ttf') format('truetype'),
+        url('Ageo-Heavy.svg#Ageo-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-SemiBold.eot');
+    src: url('Ageo-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-SemiBold.woff2') format('woff2'),
+        url('Ageo-SemiBold.woff') format('woff'),
+        url('Ageo-SemiBold.ttf') format('truetype'),
+        url('Ageo-SemiBold.svg#Ageo-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-Medium.eot');
+    src: url('Ageo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-Medium.woff2') format('woff2'),
+        url('Ageo-Medium.woff') format('woff'),
+        url('Ageo-Medium.ttf') format('truetype'),
+        url('Ageo-Medium.svg#Ageo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-Regular.eot');
+    src: url('Ageo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-Regular.woff2') format('woff2'),
+        url('Ageo-Regular.woff') format('woff'),
+        url('Ageo-Regular.ttf') format('truetype'),
+        url('Ageo-Regular.svg#Ageo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ageo';
+    src: url('Ageo-Light.eot');
+    src: url('Ageo-Light.eot?#iefix') format('embedded-opentype'),
+        url('Ageo-Light.woff2') format('woff2'),
+        url('Ageo-Light.woff') format('woff'),
+        url('Ageo-Light.ttf') format('truetype'),
+        url('Ageo-Light.svg#Ageo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

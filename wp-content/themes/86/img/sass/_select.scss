@@ -1,0 +1,77 @@
+.seletor-custom {
+    position: relative;
+    font-family: Arial;
+    select {
+        display: none; /*hide original SELECT element: */
+    }
+}
+.select-selected {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    border-top: 2px solid #929292;    
+    border-right: 2px solid #929292;
+    border-left: 2px solid #929292;
+    border-bottom: 2px solid #929292;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+        transform: rotate(45deg);
+    }
+    &.select-arrow-active{
+        border-radius: 4px 4px 0 0;
+        border-bottom: none;        
+    }
+}
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+/* Style items (options): */
+.select-items {
+    border-radius: 0 0 4px 4px;
+    color: #9F2582;
+    height: 500px;
+    overflow-y: scroll;
+    position: absolute;    
+    border-right: 2px solid #929292;
+    border-bottom: 2px solid #929292;    
+    border-left: 2px solid #929292;
+    background-color: #fff;
+    padding: 20px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    &::-webkit-scrollbar{
+        width:8px
+    }
+    &::-webkit-scrollbar-track{
+        background:transparent;
+        margin-right: 32px;
+        border-radius:4px
+    }
+    &::-webkit-scrollbar-thumb{
+        background:#dddddd;
+        border-radius:4px
+    }
+}
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.select-items div{
+    + div{
+        border-top: 2px solid #ddd;
+    }
+}

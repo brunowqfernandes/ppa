@@ -1,0 +1,37 @@
+.tabs-wrapper {
+    margin: 0;
+    position: relative;        
+    .tabs-content-wrapper{
+        padding: 30px;
+        ul{
+            li{
+                &::before{
+                    background: #009E60;
+                }
+            }
+        }
+    }
+    .wrap-tabs {
+        .tabs {
+            overflow: hidden;
+            display: flex;            
+            border-bottom: 1px solid #ddd;
+            .tab-icone {
+                height: 60px;
+                line-height: 60px;
+                transition: 0.2s;
+                margin: 0;
+                cursor: pointer;
+                overflow: hidden;
+                padding: 0 15px;                
+                color: #929292;
+                font-weight: bold;
+                font-family: "Poppins";
+                &.active {
+                    border-bottom: 4px solid #009E60;
+                    color: #009E60;
+                }
+            }
+        }
+    }
+}
