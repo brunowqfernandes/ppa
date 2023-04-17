@@ -1,0 +1,79 @@
+header {
+    color: #fff;
+    padding: 13px 52px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.alt {
+        background-color: #E9E8E7;
+        color: #666666;
+        .logo-26 {
+            margin-left: 120px;
+        }
+        .selo {
+            margin-left: 345px;
+        }
+    }
+    div.menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16.5px;
+        padding-right: 10px;
+        .menu-menu-principal-container {
+            ul {
+                list-style-type: none;
+                li {
+                    font-size: 20px;
+                    &:has(> .sub-menu) {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        &::after {
+                            display: inline-block;
+                            content: '';
+                            width: 16px;
+                            height: 16px;
+                            background: url('../img/chevron-down.png') center no-repeat;
+                            background-size: contain;
+                            margin-left: 8px;
+                        }
+                    }
+                    &:hover > .sub-menu {
+                        display: block;
+                    }
+                }
+                &.sub-menu {
+                    background-color: #0095EB;
+                    padding: 20px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    display: none;
+                }
+            }
+            > ul {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.breadcrumb {
+    font-size: 20px;
+    padding: 29px 160px 30px;
+    background-color: #FBFBFB;
+    a {
+        color: #666666;
+    }
+    .separator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #92B34A;
+        margin: 10px;
+    }
+}

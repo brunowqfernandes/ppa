@@ -1,0 +1,63 @@
+.newsletter {
+    background-color: #F5F5F5;
+    padding: 103.5px 160px 102.5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .call {
+        max-width: 510px;
+        flex: 1;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-right: 34px;
+        p:first-child {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+    .cadastro {
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+        gap: 32px;
+        > div {
+            flex: 1;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        input {
+            border: 0;
+            padding: 16px 18px 18px;
+            border-radius: 5px;
+            background-color: #fff;
+            height: 48px;
+            width: 100%;
+            &::-webkit-input-placeholder {
+                color: #626262;
+                font-size: 14px;
+                opacity: 60%;
+            }
+        }
+        button {
+            flex: 1;
+            max-width: 240px;
+            height: 50px;
+            background-color: #92B34A;
+            border-radius: 8px;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+footer {
+    padding: 64px 52px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

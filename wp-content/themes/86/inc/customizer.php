@@ -221,11 +221,26 @@ function estudio_customizer($wp_customize){
 		);
 		$wp_customize->add_control(
 			'set_contact_phone',array(
-				'label' => 'Telefones de contato',
+				'label' => 'Telefone de contato',
 				'section' => 'sec_contact',
 				'type' => 'text'
 			)
-		);		
+		);
+		$wp_customize->add_setting(
+			'set_contact_mail',array(
+				'type' => 'theme_mod',
+				'default' => '',
+				'section' => 'sec_contact',
+				'sanitize_callback' => 'wp_filter_nohtml_kses'
+			)
+		);
+		$wp_customize->add_control(
+			'set_contact_mail',array(
+				'label' => 'E-mail de contato',
+				'section' => 'sec_contact',
+				'type' => 'text'
+			)
+		);
 		$wp_customize->add_setting(
 			'set_contact_fb',array(
 				'type' => 'theme_mod',
@@ -281,7 +296,22 @@ function estudio_customizer($wp_customize){
 		);
 		$wp_customize->add_control(
 			'set_contact_whatsapp',array(
-				'label' => 'Whatasapp sem hífen e espaço',
+				'label' => 'Link Whatsapp',
+				'section' => 'sec_contact',
+				'type' => 'text'
+			)
+		);
+		$wp_customize->add_setting(
+			'set_contact_youtube',array(
+				'type' => 'theme_mod',
+				'default' => '',
+				'section' => 'sec_contact',
+				'sanitize_callback' => 'wp_filter_nohtml_kses'
+			)
+		);
+		$wp_customize->add_control(
+			'set_contact_youtube',array(
+				'label' => 'Youtube',
 				'section' => 'sec_contact',
 				'type' => 'text'
 			)

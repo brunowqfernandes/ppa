@@ -1,12 +1,12 @@
 body,html{	
 	overflow-x: hidden;
-	color: #515151;
+	color: #666666;
 	background: #fff;
 	font-size: 18px;
 	font-family: 'Ageo';
+	font-weight: 500;
 }
 [class*="titulo"], h1,h2,h3,h4,h5{
-	color: #752686;
 	font-family: 'Poppins';
 	font-weight: normal;
 }
@@ -42,7 +42,6 @@ body,html{
 }
 p{
 	margin-bottom: 0;
-	text-align: justify;
 	+ *{
 		margin-top: 24px;
 	}
@@ -94,6 +93,138 @@ a, button, input{
 	+ [class*="col"]{
 		@include for-phone{
 			margin-top: 24px;
+		}
+	}
+}
+
+.contato {
+	display: flex;
+	justify-content: flex-end;
+	.social-media {
+		ul {
+			list-style-type: none;
+			display: flex;
+			gap: 4px;
+			align-items: center;
+			margin: 0;
+		}
+		margin-right: 32px;
+	}
+	.mail {
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		margin-right: 38px;
+		font-size: 20px;
+	}
+	.phone {
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		font-size: 20px;
+	}
+}
+
+.conteudo-servicos {
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+	padding: 120px 160px;
+}
+.conteudo {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 692.52px;
+	h1 {
+		color: #92B34A;
+		font-size: 32px;
+		margin-bottom: 32px;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+	p:last-child {
+		display: flex;
+		flex: 1;
+    	align-items: flex-end;
+		a {
+			display: flex;
+			background-color: #3A7DC0;
+			width: fit-content;
+			white-space: nowrap;
+			padding: 33px 40px;
+			border-radius: 24px;
+			color: #fff;
+			font-size: 26px;
+			&::first-line {
+				font-size: 20px;
+			}
+		}
+	}
+}
+.sidebar {
+	color: #666666;
+	background-color: #F8F8F8;
+	padding: 48px 40px 40px;
+	border-radius: 8px;
+	max-width: 514px;
+	flex: 1;
+	label {
+		display: block;
+		margin-bottom: 8px;
+	}
+	input, textarea {
+		width: 100%;
+		border-radius: 5px;
+		background: #fff;
+		border: 0;
+	}
+	input {
+		height: 48px;
+		margin-bottom: 16px;
+	}
+	textarea {
+		height: 128px;
+		margin-bottom: 32px;
+	}
+	button {
+		height: 66px;
+		padding: 24px;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #92B34A;
+		border-radius: 8px;
+	}
+}
+.contate {
+	padding: 144px 15px;
+	display: flex;
+	justify-content: center;
+	background: url('../img/bg-servicos.png') center no-repeat;
+	background-size: cover;
+	.texto {
+		max-width: 408px;
+		text-align: center;
+		color: #fff;
+		h2 {
+			font-size: 32px;
+			margin: 24px 0 32px;
+			text-transform: uppercase;
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 72px;
+			line-height: 72px;
+			border-radius: 8px;
+			background-color: #3A7DC0;
+			color: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
 		}
 	}
 }

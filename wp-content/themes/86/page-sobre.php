@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('alt'); ?>
 
 <div class="main">
 
@@ -8,26 +8,23 @@
 
             <div class="row">
 
-                <div class="col">
-
-                    <h1 class="titulo-pagina"><?php echo get_field("titulo_pagina")?></h1>
-
-                </div>
-
-                <div class="col-md-3 text-md-right">
-
-                    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-
-                        <?php if(function_exists('bcn_display'))
-
-                        {
-
-                            bcn_display();
-
-                        }?>
-
-                    </div>
-
+                <div class="col-md-6">
+                    <h3>Quem Somos:</h3>
+                    <h2>Geologia e consultoria ambiental</h2>
+                    <p>
+                        Fundada em 1996 a PPA é uma empresa que atua no segmento de Gerenciamento de Áreas Contaminadas, Monitoramento de Emissões Atmosféricas, Qualidade do Ar e Licenciamento.
+                    </p>
+                    <p>
+                        Qualidade, Confiança e Empatia são alguns de nossos pilares. <br>
+                        Temos como missão atender com soluções integradas as necessidades dos clientes mantendo uma imagem de credibilidade e competência, respeitando princípios fundamentais de ética e qualidade em serviços.
+                    </p>
+                    <p>
+                        Nós cultivamos uma personalidade empresarial muito mais que a divulgamos e praticamos mais do que anunciamos. INTEGRIDADE, QUALIDADE e IMPARCIALIDADE fazem da PPA Projetos Ambientais excelência na prestação de serviços ambientais, pela capacidade de inovação tecnológica e pela ética em suas ações com os clientes, colaboradores e fornecedores.
+                    </p>
+                    <p>
+                        Somos uma consultoria ambiental criativa, prática e inovadora. <br>
+                        Conte conosco! Estamos à sua disposição.
+                    </p>
                 </div>
 
             </div>
