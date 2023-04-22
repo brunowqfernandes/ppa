@@ -2,13 +2,16 @@
 
 <div class="main">
 
-	<section class="intro">
+	<section class="sobre">
 
         <div class="container">
 
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-md-5">
+                    <img src="<?php echo get_template_directory_uri()?>/img/img-01.png" alt="">
+                </div>
+                <div class="col-md-6 offset-md-1">
                     <h3>Quem Somos:</h3>
                     <h2>Geologia e consultoria ambiental</h2>
                     <p>
@@ -25,6 +28,7 @@
                         Somos uma consultoria ambiental criativa, prática e inovadora. <br>
                         Conte conosco! Estamos à sua disposição.
                     </p>
+                    <a href="<?php the_permalink(14) ?>">Solicite uma proposta</a>
                 </div>
 
             </div>
@@ -32,128 +36,45 @@
         </div>
 
     </section>
-
-    <section class="bloco sobre">
-
+    <section class="historia">
         <div class="container">
-
             <div class="row">
-
-                <div class="col-xl-8">
-
-                    <div class="row">
-
-                        <div class="col">
-
-                            <img src="<?php echo get_field('img_sobre') ?>" alt="">
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col">
-
-                            <h2 class="titulo uppercase"><?php echo get_field('sobre_01_titulo') ?></h2>
-
-                            <?php echo get_field('sobre_01') ?>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row py-4">
-
-                        <div class="col">
-
-                            <a href="#" class="btn"><?php _e('Acesse meu Currículo Lattes','estudio') ?></a>
-
-                            <hr>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row pb-4">
-                        <div class="col">
-                            <div class="tabs-wrapper">
-                                <div class="wrap-tabs">
-                                    <div class="tabs">
-                                        <div class="tab-icone" data-target-item="tab-1" data-interacao>
-                                            <?php _e('Missão','estudio') ?>
-                                        </div>
-                                        <div class="tab-icone" data-target-item="tab-2" data-interacao>
-                                            <?php _e('Visão','estudio') ?>
-                                        </div>
-                                        <div class="tab-icone" data-target-item="tab-3" data-interacao>
-                                            <?php _e('Valores','estudio') ?>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tabs-content-wrapper">
-                                    <div class="tab-content" data-target-content="tab-1">
-                                        <?php echo get_field('missao') ?>
-                                    </div>
-                                    <div class="tab-content" data-target-content="tab-2">
-                                        <?php echo get_field('visao') ?>
-                                    </div>
-                                    <div class="tab-content" data-target-content="tab-3">
-                                        <?php echo get_field('valores') ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col">
-
-                            <h2 class="titulo-2 uppercase"><?php echo get_field('sobre_02_titulo') ?></h2>
-
-                            <?php echo get_field('sobre_02') ?>
-
-                            <hr>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col">
-
-                            <a href="<?php the_permalink(149) ?>" class="btn inverso"><?php _e('Ver galeria de fotos','estudio') ?></a>
-
-                            <a href="<?php the_permalink(20) ?>" class="btn"><?php _e('Agendar avaliação','estudio') ?></a>
-
-                        </div>
-
-                    </div>                    
-
+                <div class="col">
+                    <h3>Nossa História:</h3>
+                    <h2>A sua necessidade, o seu <br>
+                    desejo, é a nossa prioridade.</h2>
                 </div>
-
-                <div class="col-xl-4">
-
-                    <div class="box-destaque">
-
-                        <h2 class="titulo-2"><?php _e('Deixe seu <strong>telefone</strong>','estudio') ?></h2>
-
-                        <p><?php _e('Descubra como os serviços da <strong>Pastore Físio</strong> podem te ajudar!','estudio') ?></p>
-
-                        <?php echo do_shortcode('[contact-form-7 id="53" title="Deixe seu telefone"]') ?>
-
-                    </div>
-
-                </div>
-
             </div>
-
+            <div class="row">
+                <div class="col text-center">
+                <img src="<?php echo get_template_directory_uri()?>/img/historia.png" alt="">
+                </div>
+            </div>
         </div>
-
     </section>
-
+    <section class="pilares">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Nossa Essência:</h3>
+                    <h2>Os princípios destes sentidos <br>
+                        são nossos pilares</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                <img src="<?php echo get_template_directory_uri()?>/img/pilares.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contate">
+        <div class="texto">
+            <p>Contrate A PPA:</p>
+            <h2>A sua necessidade, o seu desejo, é a nossa prioridade.</h2>
+            <a href="<?php the_permalink(14)?>">Solicite agora mesmo uma proposta</a>
+        </div>
+    </section>
 </div>
 
 <?php get_footer();

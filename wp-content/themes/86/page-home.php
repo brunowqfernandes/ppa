@@ -72,183 +72,62 @@
         </div>        
 
     </section>
-
-    <section class="bloco">
-
+    <section class="servicos">
         <div class="container">
-
-            <div class="row justify-content-between align-items-center">
-
-                <div class="col">
-
-                    <div class="box-destaque">
-
-                        <div class="row align-items-center">
-
-                            <div class="col-md-1 text-center">
-
-                                <img src="<?php echo get_template_directory_uri() . '/img/down.png' ?>" alt="">
-
-                            </div>
-
-                            <div class="col-md-6">
-
-                                <h2 class="titulo"><?php echo get_field('titulo_area_aluno') ?></h2>
-                                <p><?php echo nl2br(get_field('texto_area_aluno')) ?></p>
-
-                            </div>
-
-                            <div class="col text-center text-xl-right">
-
-                                <a href="<?php the_permalink(16) ?>" class="btn">Saiba mais</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="bloco conheca">
-
-        <div class="meio-circulo">
-
-            <img src="<?php echo get_field('sobre_img_01') ?>" alt="">
-
-            <img src="<?php echo get_field('sobre_img_02') ?>" alt="">
-
-            <img src="<?php echo get_field('sobre_img_03') ?>" alt="">
-
-        </div>
-
-        <div class="texto">
-
-            <h2 class="titulo-2 uppercase"><?php echo get_field('titulo_sobre') ?></h2>
-
-            <p><?php echo nl2br(get_field('texto_sobre')) ?></p>
-
-            <a href="<?php the_permalink(10) ?>" class="btn">Saiba mais</a>
-
-        </div>
-
-        <img class="img-grande" src="<?php echo get_field('sobre_img_principal') ?>" alt="">
-
-    </section>
-
-    <section class="bloco portfolio">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
+            <div class="row justify-content-between">
                 <div class="col-md-5">
-
-                    <img src="<?php echo get_theme_mod('set_home_equip_img') ?>" alt="">                    
-
-                    <h2 class="titulo-2 uppercase mt-4"><?php echo get_field('titulo_aluguel_equipamentos') ?></h2>
-
-                    <p><?php echo nl2br(get_field('texto_aluguel_equipamentos')) ?></p>
-
-                    <div class="row">
-
-                        <div class="col text-center text-md-left">
-
-                            <a href="<?php the_permalink(14) ?>" class="btn">Saiba mais</a>
-
-                        </div>
-
+                    <div class="circle-menu">
+                        <label for="solo" class="btn-circle"></label>
+                        <label for="monitoramento" class="btn-circle"></label>
+                        <label for="licenciamento" class="btn-circle"></label>
+                        <label for="investigacao" class="btn-circle"></label>
+                        <label for="remediacao" class="btn-circle"></label>
+                        <label for="subterranea" class="btn-circle"></label>
                     </div>
-
                 </div>
-
                 <div class="col-md-6">
-
-                    <div class="servicos-box">
-
-                        <h2 class="titulo-2 uppercase"><?php echo get_field('titulo_servicos') ?></h2>
-
-                        <ul>
-
-                            <?php $query = new wp_query(array(
-                                'post_type' => 'servico',
-                                'posts_per_page' => -1,
-                                'orderby' => 'menu_order',
-                                'order' => 'ASC'
-                            ));
-
-                            if( $query->have_posts()):
-
-                                while ($query->have_posts()): $query->the_post();?>
-
-                                    <li><?php the_title() ?></li>
-
-                            <?php endwhile;
-
-                            endif; wp_reset_postdata() ?>
-
-                        </ul>
-
-                        <a href="<?php the_permalink(12) ?>" class="btn">Saiba mais</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>        
-
-    </section>
-
-    <section class="bloco">
-
-        <div class="container">
-
-            <div class="row justify-content-between align-items-center">
-
-                <div class="col">
-
-                    <div class="box-destaque pr-5">
-
-                        <div class="row align-items-center">
-
-                            <div class="col-xl-1 d-none d-xl-block text-center">
-
-                                <img src="<?php echo get_template_directory_uri() . '/img/at.png' ?>" alt="">
-
-                            </div>
-
-                            <div class="col-xl-4">
-
-                                <h2 class="titulo"><strong><?php _e('Cadastre-se','estudio') ?></strong></h2>
-
-                                <p><?php _e('Preencha os campos com seus dados e receba nossas novidades por e-mail!','estudio') ?></p>
-
-                            </div>
-
-                            <div class="col">
-
-                                <?php echo do_shortcode('[contact-form-7 id="183" title="Sem título"]') ?>
-
-                            </div>
-
+                    <h3>Nossos serviços:</h3>
+                    <div class="texto-menu-circle">
+                        <div>
+                            <input type="radio" name="radio-group" id="solo">
+                            <h2>Amostragem solo/sedimento</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
                         </div>
-
+                        <div>
+                            <input type="radio" name="radio-group" id="monitoramento">
+                            <h2>Monitoramento</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio-group" id="licenciamento">
+                            <h2>Licenciamento</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio-group" id="investigacao">
+                            <h2>Investigação</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio-group" id="remediacao">
+                            <h2>Remediação</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
+                        </div>
+                        <div>
+                            <input type="radio" name="radio-group" id="subterranea">
+                            <h2>Amostragem água subterrânea / superficial</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pellentesque mollis mauris amet condimentum pretium faucibus aliquet cursus urna. At non lorem mus libero. Ipsum quam ipsum id velit. Sed eget convallis purus felis elit quis morbi. Non adipiscing habitant sed ac neque nunc quisque.</p>
+                            <a href="<?php the_permalink(22) ?>"></a>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
 </div>
