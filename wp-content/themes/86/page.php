@@ -18,6 +18,9 @@
             <button>Enviar</button>
         </div>
 	</div>
+    <section class="galeria">
+        <?php add_revslider('corporate-clients1-1'); ?>
+    </section>
     <section class="contate">
         <div class="texto">
             <p>Contrate A PPA:</p>

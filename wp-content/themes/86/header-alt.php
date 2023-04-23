@@ -15,7 +15,7 @@
 
 	<header class="alt">
 
-		<?php the_custom_logo() ?>
+		<a href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt=""></a>
 
 		<img class="logo-26" src="<?php echo get_template_directory_uri()?>/img/logo-26.png" alt="">
 

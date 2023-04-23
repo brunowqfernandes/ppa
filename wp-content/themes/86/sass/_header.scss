@@ -4,14 +4,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 100;
     &.alt {
         background-color: #E9E8E7;
         color: #666666;
         .logo-26 {
             margin-left: 120px;
+            @media (max-width: 1600px) {
+                margin-left: 15px;
+            }
         }
         .selo {
             margin-left: 345px;
+            @media (max-width: 1600px) {
+                margin-left: 15px;
+            }
         }
     }
     div.menu {
