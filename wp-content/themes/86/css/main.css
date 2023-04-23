@@ -862,6 +862,11 @@ section.contato .form textarea {
   margin-top: -140px;
 }
 
+.nossos-clientes {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .accordion-wrapper:not(:last-child) {
   margin-bottom: 32px;
 }
